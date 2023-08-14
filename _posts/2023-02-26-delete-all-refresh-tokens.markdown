@@ -26,20 +26,21 @@ Every time when you access some Azure application (can be Teams or One Drive or 
 
 How to delete all of them? Well, it is not so easy. Per today (26.02.2023) you can do this only through Graph API or PowerShell . . If you read document carefully - Microsoft point to right cmdlet:
 
-<figure class="kg-card kg-image-card"><img src="../images/02/image-1.png" class="kg-image" alt loading="lazy" width="1852" height="1426" srcset="../images/size/w600/2023/02/image-1.png 600w,../images/size/w1000/2023/02/image-1.png 1000w,../images/size/w1600/2023/02/image-1.png 1600w,../images/02/image-1.png 1852w" sizes="(min-width: 720px) 720px"></figure>
+![Revocation table](../images/02/image-1.png){: .mx-auto.d-block :}
 
 You see? Only PowerShell officially can revoke them . . but here we have problem! This PowerShell module is old AzureAD which will be retired in summer 2023. I will help you to use new one from Microsoft.Graph module. Let's start . .
 
 We will create Azure Function with Powershell which will be killing every night ALL refresh tokens for all privileged roles, it will use managed identity to authenticate against AAD.
 
 1. Create Azure Function(Windows/PowerShell core):
-<figure class="kg-card kg-image-card"><img src="../images/02/image-2.png" class="kg-image" alt loading="lazy" width="2000" height="961" srcset="../images/size/w600/2023/02/image-2.png 600w,../images/size/w1000/2023/02/image-2.png 1000w,../images/size/w1600/2023/02/image-2.png 1600w,../images/size/w2400/2023/02/image-2.png 2400w" sizes="(min-width: 720px) 720px"></figure>
+
+![Create Azure Function](../images/02/image-2.png){: .mx-auto.d-block :}
 
 With time trigger it will run every day 0:10 &nbsp;. .
 
 2. Create System assigned Managed Identity:
 
-<figure class="kg-card kg-image-card"><img src="../images/02/image-3.png" class="kg-image" alt loading="lazy" width="1782" height="1221" srcset="../images/size/w600/2023/02/image-3.png 600w,../images/size/w1000/2023/02/image-3.png 1000w,../images/size/w1600/2023/02/image-3.png 1600w,../images/02/image-3.png 1782w" sizes="(min-width: 720px) 720px"></figure>
+![Create System assigned Managed Identity](../images/02/image-3.png){: .mx-auto.d-block :}
 
 &nbsp;3. Add Application API permission to the MI:
 
@@ -67,9 +68,6 @@ Last part can be copied from this link:
 
 <figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://learn.microsoft.com/en-us/graph/permissions-reference"><div class="kg-bookmark-content">
 <div class="kg-bookmark-title">Microsoft Graph permissions reference - Microsoft Graph</div>
-<div class="kg-bookmark-metadata">
-<img class="kg-bookmark-icon" src="https://learn.microsoft.com/favicon.ico" alt=""><span class="kg-bookmark-author">Microsoft Learn</span><span class="kg-bookmark-publisher">FaithOmbongi</span>
-</div>
 </div>
 </a></figure>
 
@@ -84,7 +82,8 @@ And actually put those permission to MI:
 `New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId YOURMIGUID -BodyParameter $params`
 
 <!--kg-card-end: markdown-->
-<figure class="kg-card kg-image-card"><img src="../images/02/image-4.png" class="kg-image" alt loading="lazy" width="2000" height="1157" srcset="../images/size/w600/2023/02/image-4.png 600w,../images/size/w1000/2023/02/image-4.png 1000w,../images/size/w1600/2023/02/image-4.png 1600w,../images/size/w2400/2023/02/image-4.png 2400w" sizes="(min-width: 720px) 720px"></figure>
+
+![MI Permissions](../images/02/image-4.png){: .mx-auto.d-block :}
 
 4. Add PowerShell Modules to file requrements.psd1
 
