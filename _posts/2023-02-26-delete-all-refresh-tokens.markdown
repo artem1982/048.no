@@ -2,6 +2,7 @@
 layout: post
 title: Delete all refresh tokens
 date: '2023-02-26 20:12:09'
+full-width: true
 ---
 
 with Azure function please . .
