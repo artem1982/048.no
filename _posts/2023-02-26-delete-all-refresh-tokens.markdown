@@ -107,7 +107,7 @@ I added those lines to import proper modules. You can see that I am using "previ
 
 And actually put code:
 
-<figure class="kg-card kg-image-card"><img src="images/content/images/2023/02/image-6.png" class="kg-image" alt loading="lazy" width="2000" height="1053" srcset="images/content/images/size/w600/2023/02/image-6.png 600w,images/content/images/size/w1000/2023/02/image-6.png 1000w,images/content/images/size/w1600/2023/02/image-6.png 1600w,images/content/images/size/w2400/2023/02/image-6.png 2400w" sizes="(min-width: 720px) 720px"></figure><!--kg-card-begin: markdown-->
+<figure class="kg-card kg-image-card"><img src="../images/content/images/2023/02/image-6.png" class="kg-image" alt loading="lazy" width="2000" height="1053" srcset="images/content/images/size/w600/2023/02/image-6.png 600w,images/content/images/size/w1000/2023/02/image-6.png 1000w,images/content/images/size/w1600/2023/02/image-6.png 1600w,images/content/images/size/w2400/2023/02/image-6.png 2400w" sizes="(min-width: 720px) 720px"></figure><!--kg-card-begin: markdown-->
 
     # Input bindings are passed in via param block.
     param($Timer)
