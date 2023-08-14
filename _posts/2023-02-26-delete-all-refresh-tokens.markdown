@@ -14,11 +14,8 @@ This area is grey and you will not get details of Microsoft implementation, but 
 <figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://learn.microsoft.com/en-us/azure/active-directory/develop/refresh-tokens"><div class="kg-bookmark-content">
 <div class="kg-bookmark-title">Microsoft identity platform refresh tokens - Microsoft Entra</div>
 <div class="kg-bookmark-description">Learn about refresh tokens emitted by the Azure AD.</div>
-<div class="kg-bookmark-metadata">
-<img class="kg-bookmark-icon" src="https://learn.microsoft.com/favicon.ico" alt=""><span class="kg-bookmark-author">Microsoft Learn</span><span class="kg-bookmark-publisher">SHERMANOUKO</span>
 </div>
-</div>
-<div class="kg-bookmark-thumbnail"><img src="https://learn.microsoft.com/en-us/media/logos/logo-ms-social.png" alt=""></div></a></figure>
+</a></figure>
 
 Here is important parts:
 
