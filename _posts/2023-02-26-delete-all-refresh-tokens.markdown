@@ -18,7 +18,7 @@ This area is grey and you will not get details of Microsoft implementation, but 
 
 Here is important parts:
 
-<figure class="kg-card kg-image-card"><img src="../images/02/image.png" class="kg-image" alt loading="lazy" width="1887" height="477"></figure>
+![Refresh Tokens](../images/02/image.png){: .mx-auto.d-block :}
 
 "Securely delete the old refresh token after acquiring new one" . . jepp never heard that somebody did it =)
 
