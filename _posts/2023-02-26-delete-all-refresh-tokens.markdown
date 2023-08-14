@@ -21,7 +21,7 @@ This area is grey and you will not get details of Microsoft implementation, but 
 
 Here is important parts:
 
-<figure class="kg-card kg-image-card"><img src="images/content/images/2023/02/image.png" class="kg-image" alt loading="lazy" width="1887" height="477" srcset="images/content/images/size/w600/2023/02/image.png 600w,images/content/images/size/w1000/2023/02/image.png 1000w,images/content/images/size/w1600/2023/02/image.png 1600w,images/content/images/2023/02/image.png 1887w" sizes="(min-width: 720px) 720px"></figure>
+<figure class="kg-card kg-image-card"><img src="../images/02/image.png" class="kg-image" alt loading="lazy" width="1887" height="477" srcset="../images/size/w600/2023/02/image.png 600w,../images/size/w1000/2023/02/image.png 1000w,../images/size/w1600/2023/02/image.png 1600w,../images/02/image.png 1887w" sizes="(min-width: 720px) 720px"></figure>
 
 "Securely delete the old refresh token after acquiring new one" . . jepp never heard that somebody did it =)
 
@@ -29,20 +29,20 @@ Every time when you access some Azure application (can be Teams or One Drive or 
 
 How to delete all of them? Well, it is not so easy. Per today (26.02.2023) you can do this only through Graph API or PowerShell . . If you read document carefully - Microsoft point to right cmdlet:
 
-<figure class="kg-card kg-image-card"><img src="images/content/images/2023/02/image-1.png" class="kg-image" alt loading="lazy" width="1852" height="1426" srcset="images/content/images/size/w600/2023/02/image-1.png 600w,images/content/images/size/w1000/2023/02/image-1.png 1000w,images/content/images/size/w1600/2023/02/image-1.png 1600w,images/content/images/2023/02/image-1.png 1852w" sizes="(min-width: 720px) 720px"></figure>
+<figure class="kg-card kg-image-card"><img src="../images/02/image-1.png" class="kg-image" alt loading="lazy" width="1852" height="1426" srcset="../images/size/w600/2023/02/image-1.png 600w,../images/size/w1000/2023/02/image-1.png 1000w,../images/size/w1600/2023/02/image-1.png 1600w,../images/02/image-1.png 1852w" sizes="(min-width: 720px) 720px"></figure>
 
 You see? Only PowerShell officially can revoke them . . but here we have problem! This PowerShell module is old AzureAD which will be retired in summer 2023. I will help you to use new one from Microsoft.Graph module. Let's start . .
 
 We will create Azure Function with Powershell which will be killing every night ALL refresh tokens for all privileged roles, it will use managed identity to authenticate against AAD.
 
 1. Create Azure Function(Windows/PowerShell core):
-<figure class="kg-card kg-image-card"><img src="images/content/images/2023/02/image-2.png" class="kg-image" alt loading="lazy" width="2000" height="961" srcset="images/content/images/size/w600/2023/02/image-2.png 600w,images/content/images/size/w1000/2023/02/image-2.png 1000w,images/content/images/size/w1600/2023/02/image-2.png 1600w,images/content/images/size/w2400/2023/02/image-2.png 2400w" sizes="(min-width: 720px) 720px"></figure>
+<figure class="kg-card kg-image-card"><img src="../images/02/image-2.png" class="kg-image" alt loading="lazy" width="2000" height="961" srcset="../images/size/w600/2023/02/image-2.png 600w,../images/size/w1000/2023/02/image-2.png 1000w,../images/size/w1600/2023/02/image-2.png 1600w,../images/size/w2400/2023/02/image-2.png 2400w" sizes="(min-width: 720px) 720px"></figure>
 
 With time trigger it will run every day 0:10 &nbsp;. .
 
 2. Create System assigned Managed Identity:
 
-<figure class="kg-card kg-image-card"><img src="images/content/images/2023/02/image-3.png" class="kg-image" alt loading="lazy" width="1782" height="1221" srcset="images/content/images/size/w600/2023/02/image-3.png 600w,images/content/images/size/w1000/2023/02/image-3.png 1000w,images/content/images/size/w1600/2023/02/image-3.png 1600w,images/content/images/2023/02/image-3.png 1782w" sizes="(min-width: 720px) 720px"></figure>
+<figure class="kg-card kg-image-card"><img src="../images/02/image-3.png" class="kg-image" alt loading="lazy" width="1782" height="1221" srcset="../images/size/w600/2023/02/image-3.png 600w,../images/size/w1000/2023/02/image-3.png 1000w,../images/size/w1600/2023/02/image-3.png 1600w,../images/02/image-3.png 1782w" sizes="(min-width: 720px) 720px"></figure>
 
 &nbsp;3. Add Application API permission to the MI:
 
@@ -87,11 +87,12 @@ And actually put those permission to MI:
 
 `New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId YOURMIGUID -BodyParameter $params`
 
-<!--kg-card-end: markdown--><figure class="kg-card kg-image-card"><img src="images/content/images/2023/02/image-4.png" class="kg-image" alt loading="lazy" width="2000" height="1157" srcset="images/content/images/size/w600/2023/02/image-4.png 600w,images/content/images/size/w1000/2023/02/image-4.png 1000w,images/content/images/size/w1600/2023/02/image-4.png 1600w,images/content/images/size/w2400/2023/02/image-4.png 2400w" sizes="(min-width: 720px) 720px"></figure>
+<!--kg-card-end: markdown-->
+<figure class="kg-card kg-image-card"><img src="../images/02/image-4.png" class="kg-image" alt loading="lazy" width="2000" height="1157" srcset="../images/size/w600/2023/02/image-4.png 600w,../images/size/w1000/2023/02/image-4.png 1000w,../images/size/w1600/2023/02/image-4.png 1600w,../images/size/w2400/2023/02/image-4.png 2400w" sizes="(min-width: 720px) 720px"></figure>
 
 4. Add PowerShell Modules to file requrements.psd1
 
-<figure class="kg-card kg-image-card"><img src="images/content/images/2023/02/image-5.png" class="kg-image" alt loading="lazy" width="2000" height="876" srcset="images/content/images/size/w600/2023/02/image-5.png 600w,images/content/images/size/w1000/2023/02/image-5.png 1000w,images/content/images/size/w1600/2023/02/image-5.png 1600w,images/content/images/size/w2400/2023/02/image-5.png 2400w" sizes="(min-width: 720px) 720px"></figure>
+<figure class="kg-card kg-image-card"><img src="../images/02/image-5.png" class="kg-image" alt loading="lazy" width="2000" height="876" srcset="../images/size/w600/2023/02/image-5.png 600w,../images/size/w1000/2023/02/image-5.png 1000w,../images/size/w1600/2023/02/image-5.png 1600w,../images/size/w2400/2023/02/image-5.png 2400w" sizes="(min-width: 720px) 720px"></figure>
 
 I added those lines to import proper modules. You can see that I am using "preview". Because at this moment Microsoft support managed identity ONLY in v2 version of PowerShell MS.Graph.
 
@@ -107,7 +108,7 @@ I added those lines to import proper modules. You can see that I am using "previ
 
 And actually put code:
 
-<figure class="kg-card kg-image-card"><img src="../images/content/images/2023/02/image-6.png" class="kg-image" alt loading="lazy" width="2000" height="1053" srcset="images/content/images/size/w600/2023/02/image-6.png 600w,images/content/images/size/w1000/2023/02/image-6.png 1000w,images/content/images/size/w1600/2023/02/image-6.png 1600w,images/content/images/size/w2400/2023/02/image-6.png 2400w" sizes="(min-width: 720px) 720px"></figure><!--kg-card-begin: markdown-->
+<figure class="kg-card kg-image-card"><img src="../images/02/image-6.png" class="kg-image" alt loading="lazy" width="2000" height="1053" srcset="../images/size/w600/2023/02/image-6.png 600w,../images/size/w1000/2023/02/image-6.png 1000w,../images/size/w1600/2023/02/image-6.png 1600w,../images/size/w2400/2023/02/image-6.png 2400w" sizes="(min-width: 720px) 720px"></figure><!--kg-card-begin: markdown-->
 
     # Input bindings are passed in via param block.
     param($Timer)
