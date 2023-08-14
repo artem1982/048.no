@@ -18,7 +18,7 @@ This area is grey and you will not get details of Microsoft implementation, but 
 
 Here is important parts:
 
-![Refresh Tokens](../images/02/image.png){: .mx-auto.d-block :}
+![Refresh Tokens](../images/02/image.png){: width="100%" .mx-auto.d-block :}
 
 "Securely delete the old refresh token after acquiring new one" . . jepp never heard that somebody did it =)
 
