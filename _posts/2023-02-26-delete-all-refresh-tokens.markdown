@@ -13,7 +13,6 @@ This area is grey and you will not get details of Microsoft implementation, but 
 
 <figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://learn.microsoft.com/en-us/azure/active-directory/develop/refresh-tokens"><div class="kg-bookmark-content">
 <div class="kg-bookmark-title">Microsoft identity platform refresh tokens - Microsoft Entra</div>
-<div class="kg-bookmark-description">Learn about refresh tokens emitted by the Azure AD.</div>
 </div>
 </a></figure>
 
@@ -68,12 +67,11 @@ Last part can be copied from this link:
 
 <figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://learn.microsoft.com/en-us/graph/permissions-reference"><div class="kg-bookmark-content">
 <div class="kg-bookmark-title">Microsoft Graph permissions reference - Microsoft Graph</div>
-<div class="kg-bookmark-description">Microsoft Graph exposes granular permissions that control the access that apps have to resources, like users, groups, and mail. As a developer, you decide which permissions for Microsoft Graph your app requests.</div>
 <div class="kg-bookmark-metadata">
 <img class="kg-bookmark-icon" src="https://learn.microsoft.com/favicon.ico" alt=""><span class="kg-bookmark-author">Microsoft Learn</span><span class="kg-bookmark-publisher">FaithOmbongi</span>
 </div>
 </div>
-<div class="kg-bookmark-thumbnail"><img src="https://learn.microsoft.com/en-us/media/logos/logo-ms-social.png" alt=""></div></a></figure>
+</a></figure>
 
 I will use Directory.ReadWrite.All "19dbc75e-c2e2-444c-a770-ec69d8559fc7" to delete tokens and RoleManagement.Read.All "c7fbd983-d9aa-4fa7-84b8-17382c103bc4" to read assignments to privileged roles.
 
@@ -173,12 +171,11 @@ Part with getting principalsIDs was borrowed from:
 
 <figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://learningbydoing.cloud/blog/building-a-comprehensive-report-on-azure-ad-admin-role-assignments/"><div class="kg-bookmark-content">
 <div class="kg-bookmark-title">Building a comprehensive report on Azure AD admin role assignments in Powershell</div>
-<div class="kg-bookmark-description">Keeping an eye on Azure AD administrative role assignments is crucial for tenant security and compliance. Forget about the built-in PIM report in the Azure AD portal - take reporting to the next level and build your own report with Graph, KQL and Powershell.</div>
 <div class="kg-bookmark-metadata">
 <span class="kg-bookmark-author">LearningByDoing.cloud</span><span class="kg-bookmark-publisher">Stian A. Strysse</span>
 </div>
 </div>
-<div class="kg-bookmark-thumbnail"><img src="https://learningbydoing.cloud/assets/img/posts/2022-09-18/shareimg-unsplash.jpg" alt=""></div></a></figure>
+</a></figure>
 
 Thanks for code! =)
 
