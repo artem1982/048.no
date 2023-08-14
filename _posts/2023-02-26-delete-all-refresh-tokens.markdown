@@ -87,7 +87,7 @@ And actually put those permission to MI:
 
 4. Add PowerShell Modules to file requrements.psd1
 
-<figure class="kg-card kg-image-card"><img src="../images/02/image-5.png" class="kg-image" alt loading="lazy" width="2000" height="876" srcset="../images/size/w600/2023/02/image-5.png 600w,../images/size/w1000/2023/02/image-5.png 1000w,../images/size/w1600/2023/02/image-5.png 1600w,../images/size/w2400/2023/02/image-5.png 2400w" sizes="(min-width: 720px) 720px"></figure>
+![Powershell modules requirements](../images/02/image-5.png){: .mx-auto.d-block :}
 
 I added those lines to import proper modules. You can see that I am using "preview". Because at this moment Microsoft support managed identity ONLY in v2 version of PowerShell MS.Graph.
 
@@ -103,7 +103,11 @@ I added those lines to import proper modules. You can see that I am using "previ
 
 And actually put code:
 
-<figure class="kg-card kg-image-card"><img src="../images/02/image-6.png" class="kg-image" alt loading="lazy" width="2000" height="1053" srcset="../images/size/w600/2023/02/image-6.png 600w,../images/size/w1000/2023/02/image-6.png 1000w,../images/size/w1600/2023/02/image-6.png 1600w,../images/size/w2400/2023/02/image-6.png 2400w" sizes="(min-width: 720px) 720px"></figure><!--kg-card-begin: markdown-->
+
+
+![Azure Function code](../images/02/image-6.png){: .mx-auto.d-block :}
+
+<!--kg-card-begin: markdown-->
 
     # Input bindings are passed in via param block.
     param($Timer)
