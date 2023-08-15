@@ -143,7 +143,7 @@ footer-hover-col: "#00FF41"
 # instead of colour
 
 #navbar-img: "/images/02/Table_in_the_office.png"
-#footer-img: "/assets/img/bgimage.png"
+footer-img: "/images/02/matrix.png"
 #page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
