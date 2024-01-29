@@ -94,7 +94,7 @@ And jepp - token escalated without any additional moves . .
 >     CategoryInfo          : InvalidOperation: ({ body = {
   "...reADMyOrg"
 } }:<>f__AnonymousType12`1) [New-AzADApplication_CreateExpanded], Exception
-    + FullyQualifiedErrorId : Authorization_RequestDenied,Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Cmdlets.NewAzADApplication_CreateExpanded
+     FullyQualifiedErrorId : Authorization_RequestDenied,Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Cmdlets.NewAzADApplication_CreateExpanded
 >Az.MSGraph.internal\New-AzADApplication : Insufficient privileges to complete the operation.
 At C:\Program Files\WindowsPowerShell\Modules\Az.Resources\6.11.1\MSGraph.Autorest\custom\New-AzADApplication.ps1:698 char:5
 >     $app = Az.MSGraph.internal\New-AzADApplication @PSBoundParameters
@@ -102,7 +102,7 @@ At C:\Program Files\WindowsPowerShell\Modules\Az.Resources\6.11.1\MSGraph.Autore
 >     CategoryInfo          : InvalidOperation: ({ body = {
   "...reADMyOrg"
 >} }:<>f__AnonymousType12`1) [New-AzADApplication_CreateExpanded], Exception
-    + FullyQualifiedErrorId : Authorization_RequestDenied,Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Cmdlets.NewAzADApplication_CreateExpanded
+     FullyQualifiedErrorId : Authorization_RequestDenied,Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Cmdlets.NewAzADApplication_CreateExpanded
 >
 >DisplayName Id                                   AppId                               
 >----------- --                                   -----                               
