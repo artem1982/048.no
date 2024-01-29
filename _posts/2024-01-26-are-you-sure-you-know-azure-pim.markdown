@@ -89,17 +89,17 @@ And jepp - token escalated without any additional moves . .
 
 >Az.MSGraph.internal\New-AzADApplication : Insufficient privileges to complete the operation.
 >At C:\Program Files\WindowsPowerShell\Modules\Az.Resources\6.11.1\MSGraph.Autorest\custom\New-AzADApplication.ps1:698 char:5
->+     $app = Az.MSGraph.internal\New-AzADApplication @PSBoundParameters
->+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
->    + CategoryInfo          : InvalidOperation: ({ body = {
+>     $app = Az.MSGraph.internal\New-AzADApplication @PSBoundParameters
+>     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+>     CategoryInfo          : InvalidOperation: ({ body = {
   "...reADMyOrg"
 } }:<>f__AnonymousType12`1) [New-AzADApplication_CreateExpanded], Exception
     + FullyQualifiedErrorId : Authorization_RequestDenied,Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Cmdlets.NewAzADApplication_CreateExpanded
-Az.MSGraph.internal\New-AzADApplication : Insufficient privileges to complete the operation.
+>Az.MSGraph.internal\New-AzADApplication : Insufficient privileges to complete the operation.
 At C:\Program Files\WindowsPowerShell\Modules\Az.Resources\6.11.1\MSGraph.Autorest\custom\New-AzADApplication.ps1:698 char:5
->+     $app = Az.MSGraph.internal\New-AzADApplication @PSBoundParameters
->+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
->    + CategoryInfo          : InvalidOperation: ({ body = {
+>     $app = Az.MSGraph.internal\New-AzADApplication @PSBoundParameters
+>     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+>     CategoryInfo          : InvalidOperation: ({ body = {
   "...reADMyOrg"
 >} }:<>f__AnonymousType12`1) [New-AzADApplication_CreateExpanded], Exception
     + FullyQualifiedErrorId : Authorization_RequestDenied,Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Cmdlets.NewAzADApplication_CreateExpanded
