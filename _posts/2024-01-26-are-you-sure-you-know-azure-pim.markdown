@@ -80,7 +80,6 @@ And if we steal token, how we will find out if user is pimed??? Just run script 
 
 >while (1 -eq 1 ){
 >$command=try{New-AzADApplication -DisplayName blinQ *>&1}catch{$_}
->
 >$command | Out-File c:\CIS\iwanttoknow.txt -Append
 >
 >start-sleep -seconds 10
