@@ -105,7 +105,7 @@ At C:\Program Files\WindowsPowerShell\Modules\Az.Resources\6.11.1\MSGraph.Autore
 >} }:<>f__AnonymousType121) [New-AzADApplication_CreateExpanded], Exception
      FullyQualifiedErrorId : Authorization_RequestDenied,Microsoft.Azure.PowerShell.Cmdlets.Resources.MSGraph.Cmdlets.NewAzADApplication_CreateExpanded
 >
->DisplayName Id                                   AppId                               
+><span style="color:red">DisplayName Id                                   AppId                               
 >----------- --                                   -----                               
 >blinQ   694f2d2f-e5x
 >
@@ -114,6 +114,7 @@ At C:\Program Files\WindowsPowerShell\Modules\Az.Resources\6.11.1\MSGraph.Autore
 >DisplayName Id                                   AppId                               
 >----------- --                                   -----                               
 >blinQ   a0b7f9c7-e3x
+></span>
 
 Detection:
 
