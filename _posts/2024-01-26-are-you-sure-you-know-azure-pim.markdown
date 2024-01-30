@@ -10,7 +10,7 @@ Everything in Azure based on tokens, when you authenticate with you modern CBA m
 
 It is require ID P2/Governance license .. 
 
-And not working as moste people think .. It DOES NOT create new token, it is juste escalate ALL tokens which is connected to elevated account!
+And not working as moste people think .. It DOES NOT create new token, it is just escalate ALL tokens which is connected to elevated account!
 
 Really good blog from Cody Burkard describe main points:
 https://codyburkard.com/blog/jitprivilegeescalation/
